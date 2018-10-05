@@ -1,0 +1,9 @@
+{
+  "name": "@kpvlab/color-utils",
+  "version": "2.0.4",
+  "main": "color-utils.js",
+  "repository": "https://github.com/kpv-lab/cl-color-utils.git",
+  "author": "KPV Lab Edinburgh",
+  "license": "UNLICENSED",
+  "devDependencies": {}
+}

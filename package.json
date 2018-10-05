@@ -1,13 +1,15 @@
 {
   "name": "wallaby-1853",
   "version": "1.0.0",
+  "private": true,
   "scripts": {
-    "postinstall": "mkdir node_modules/@kpvlab && echo export default class A {} > node_modules/@kpvlab/index.js && cd packages/client && npm install"
+    "postinstall": "cp -R @kpvlab node_modules/"
   },
-  "dependencies": {
-    "babel-core": "^6.26.3",
-    "babel-jest": "^23.6.0",
-    "babel-preset-env": "^1.7.0",
-    "regenerator-runtime": "^0.12.1"
-  }
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/register": "7.0.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
 }

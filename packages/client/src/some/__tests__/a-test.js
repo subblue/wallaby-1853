@@ -1,5 +1,5 @@
-import A from '@kpvlab'
+import { wallabyTest } from '@kpvlab/color-utils'
 
 it('works', () => {
-    console.log(A);
+  console.log(wallabyTest(2))
 })
