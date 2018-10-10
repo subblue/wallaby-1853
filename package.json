@@ -1,12 +1,26 @@
 {
-  "name": "wallaby-1853",
+  "name": "client",
   "version": "1.0.0",
-  "private": true,
   "dependencies": {},
-  "devDependencies": {
-    "@babel/register": "7.0.0"
+  "scripts": {
+    "postinstall": "cp -R @kpvlab node_modules/",
+    "test": "jest"
   },
-  "workspaces": [
-    "packages/*"
-  ]
+  "devDependencies": {
+    "jest": "23.6.0",
+    "babel-jest": "23.6.0",
+    "@babel/core": "7.1.2",
+    "babel-core": "7.0.0-bridge.0",
+    "@babel/preset-env": "7.1.0",
+    "@babel/preset-react": "7.0.0"
+  },
+  "jest": {
+    "testRegex": "src/.*/__tests__/.*?-test.js$",
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "transformIgnorePatterns": [
+      "/node_modules/(?!@kpvlab)"
+    ]
+  }
 }
