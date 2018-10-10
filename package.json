@@ -21,7 +21,6 @@
     },
     "transformIgnorePatterns": [
       "/node_modules/(?!@kpvlab)"
-    ],
-    "verbose": true
+    ]
   }
 }
