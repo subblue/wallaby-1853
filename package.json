@@ -2,9 +2,6 @@
   "name": "wallaby-1853",
   "version": "1.0.0",
   "private": true,
-  "scripts": {
-    "postinstall": "cp -R @kpvlab node_modules/"
-  },
   "dependencies": {},
   "devDependencies": {
     "@babel/register": "7.0.0"
