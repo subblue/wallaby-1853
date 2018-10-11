@@ -1,7 +1,11 @@
 module.exports = function(wallaby) {
   process.env.NODE_PATH = require('path').join(__dirname, './node_modules')
   return {
-    files: ['src/**/*.js*', '!src/**/__tests__/*-test.js'],
+    files: [
+      'src/**/*.js*',
+      { pattern: 'babel.config.js', instrument: false },
+      '!src/**/__tests__/*-test.js'
+    ],
 
     tests: ['src/**/__tests__/*-test.js'],
 
